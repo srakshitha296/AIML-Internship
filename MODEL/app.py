@@ -6,7 +6,7 @@ from PIL import Image
 
 
 #load the pickle file
-with open("C:\\Users\\sraks\\AIML Internship\\AIML-Internship\\TASK/prediction.pickle", 'rb') as f:
+with open("C:\\Users\\sraks\\AIML Internship\\AIML-Internship\\MODEL/prediction.pickle", 'rb') as f:
     model = pickle.load(f)
 
 #Header
@@ -282,5 +282,5 @@ if st.sidebar.button("SUBMIT"):
     st.write(f"<h2 style='text-align:center; color:green '>Expected Total Charges <br> {predicted}<h2>",unsafe_allow_html=True)
 
 else:
-    image = Image.open("C:\\Users\\sraks\\AIML Internship\\AIML-Internship\\TASK\\T01\\img.png")
+    image = Image.open("C:\\Users\\sraks\\AIML Internship\\AIML-Internship\\MODEL\\img.png")
     st.image(image, caption="Price prediction")
